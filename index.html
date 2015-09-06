@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="css/style.css" />
+    <script src="resource/libs/require.js" data-main="resource/dept/main"></script>
+</head>
+<body>
+	<div class="wrapper">
+	<!--导航栏-->
+	<div id="menu">
+		<div class="menu_button">
+		<input type="checkbox" name="checkAll" class="checkAll">
+		<div class="name">
+		<input type="button" name="name" class="name_btn" value="名称"><span><img src="resource/img/bottom.png" class="name_bottom"></span>
+			<div class="name_div">
+			<input type="button" name="name" class="name_btn1" value="名称"><br/>
+			<input type="button" name="time" class="time_btn" value="时间">
+			</div>
+		</div>
+		<div class="find">
+		<input type="button" name="search" class="search" value="过滤查询"><span><img src="resource/img/bottom.png" class="name_bottom"></span>
+			<div class="search_div">
+				<label>根据组名查找：</label><br/>
+				<input type="text" name="search_name" class="search_name" placeholder="请输入要查找的名称">
+				<input type="button" name="search_btn" class="search_btn" value="查找">
+			</div>
+		</div>
+		<input type="button" name="del" class="del_btn" value="删除">
+		<input type="button" name="add" class="add_btn" value="新增">	
+		</div>
+		<div class="results"></div>
+	</div>
+	<!--页面内容-->
+	<div class="page">
+		<div class="addItem">
+		</div>
+	</div>
+	<!--页脚-->
+	<div class='footer'>
+		<ul class="show_line">
+			<li>5</li>
+			<li>10</li>
+			<li>20</li>
+			<li>30</li>
+			<li>40</li>
+		</ul>
+		<div class="show_list">
+			<span>每页显示行数：</span><span class="line">5</span><span><img src="resource/img/bottom.png" class="line_bottom"></span>
+		</div>
+		<div class="right_div"><span><img src="resource/img/prev.png" class="prev"></span><span class="show_start">1</span>-<span class="show_end">5</span>/<span class="all_count">48</span><span><img src="resource/img/next.png" class="next"></span></div>
+	</div>
+	<!--新增弹出页面页面-->
+	<div class="addPage">
+		<div class="addPage_menu">
+			<h2>添加联系人组<a href="##"><img src="resource/img/close.png"></a></h2>
+			<p class="tip">&nbsp;&nbsp;注意：<span>* </span>表示必填项</p>
+		</div>
+		<div class="addPage_content">
+			<p><span> * </span>组名称</p>
+			<input type="text" name="add_name" class="add_name" placeholder="请输入组名称">
+			<p><span> * </span>默认邮箱地址</p>
+			<input type="text" name="add_name" class="add_email_addr" placeholder="请输入默认邮箱地址">
+			<p><span> * </span>默认邮箱发送名称</p>
+			<input type="text" name="add_name" class="add_email_name" placeholder="请输入默认邮箱发送名称">
+			<p><input type="button" name="save_btn" class="save_btn" value="保存">
+			<input type="button" name="cancel_btn" class="cancel_btn" value="取消"></p>
+		</div>
+	</div>
+	<!--删除信息弹出提示页面-->
+	<div class="delPage">
+		<div class="delPage_menu">
+			<h2>是否删除？<a href="##"><img src="resource/img/close.png"></a></h2>
+		</div>
+		<div class="delPage_content">
+			<div><span class="span_name">组名称</span><span class="span_count">订阅数</span></div>
+			<div class="del_info">
+			</div>
+			<div class="del_bottom">
+			<p>提示：执行删除操作后该列表中所有组以及组下的订阅者及其相关信息都将被删除。</p>
+			<p><input type="checkbox" name="del_cb">请确认删除所选联系人组。</p>
+			<p><input type="button" name="del_btn" class="del_btn_check" value="删除">
+			<input type="button" name="cancel_btn" class="cancel_btn" value="取消"></p>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

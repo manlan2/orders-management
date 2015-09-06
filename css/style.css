@@ -1,0 +1,374 @@
+input[type=button]{
+	cursor: pointer;
+}
+.wrapper{
+	width:1200px;
+	height:1000px;
+	position:relative;
+	left: 50%;
+	margin-left: -600px;
+}
+#menu{
+	width:1000px;
+	height:80px;
+	position:absolute;
+	top:50px;
+	left: 50%;
+	margin-left: -500px;
+	border-bottom: 2px solid blue;
+}
+#menu .results{
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin-top: 10px;
+	float: right;
+}
+#menu .results label{
+	color:red;
+}
+.page{
+	width:1000px;
+	position:relative;
+	top:160px;
+	left: 50%;
+	margin-left: -500px;
+}
+.addItem{
+	width:1000px;
+	position:relative;
+	left: 50%;
+	margin-left: -500px;
+}
+.showInfo{
+	height:80px;
+	border-bottom: 1px solid green;
+}
+.showInfo:hover{
+	background-color: #F0F8FF;
+}
+.checkbox{
+	float:left;
+	margin: 16px 20px 0px 0px;
+}
+.name_date,.count,.openRate,.clickRate{
+	width:200px;
+	height:50px;
+	float:left;
+}
+.img{
+	width:200px;
+	height:10px;
+	position:absolute;
+	margin-left: 800px;
+	margin-top: 20px;
+}
+.search{
+	width:110px;
+	height:40px;
+	font-family: "宋体";
+	font-size: 20px;
+	border:1px solid #bbb;
+	border-radius: 6px;
+	background-color: #e0e0e0;
+	cursor: pointer;
+}
+.name_btn,.del_btn,.add_btn,.time_btn,.save_btn{
+	width:55px;
+	height:40px;
+	font-family: "宋体";
+	font-size: 20px;
+	border:1px solid #bbb;
+	border-radius: 5px;
+	background-color: #e0e0e0;
+	cursor: pointer;
+
+}
+.name_btn{
+	width:80px;
+	height:40px;
+	font-family: "宋体";
+	font-size: 20px;
+	border:1px solid #bbb;
+	border-radius: 5px;
+	background-color: #e0e0e0;
+	cursor: pointer;
+}
+.menu_button .name_bottom{
+	margin-left: -16px;
+	margin-top:16px;
+	cursor:pointer;
+}
+.name_div .name_btn1,.time_btn{
+	width:80px;
+	height:40px;
+	font-family: "宋体";
+	font-size: 20px;
+	border:1px solid #bbb;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.name_div .name_btn1:hover,.time_btn:hover{
+	background-color:#e0e0e0;
+}
+.search_btn{
+	width:35px;
+	height:30px;
+	font-family: "宋体";
+	font-size: 10px;
+	border:1px solid #bbb;
+	border-radius: 5px;
+	background-color:#e0e0e0;
+	cursor: pointer;
+}
+.cancel_btn{
+	width:55px;
+	height:40px;
+	font-family: "宋体";
+	color: #bba;
+	font-size: 20px;
+	border:1px solid #eee;
+	border-radius: 5px;
+	background-color: #eea;
+	cursor: pointer;
+}
+.name{
+	margin-left: 36px;
+	margin-top: -26px;
+}
+.find{
+	margin-left: 122px;
+	margin-top: -40px;
+}
+.del_btn{
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 238px;
+}
+.add_btn{
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 300px;
+}
+.name_div{
+	position:absolute;
+	display:none;
+	margin-left:0px;
+}
+.search_div{
+	position: absolute;
+	display:none;
+	width:220px;
+	height:60px;
+	font-family: "宋体";
+	font-size: 15px;
+	background-color:#e0e0e0;
+	border:1px solid #eee;
+	border-radius: 5px;
+	padding: 5px;
+}
+h2{
+	font-family: "楷体";
+	text-align: center;
+	color:blue;
+	font-size: 24px;
+}
+.addPage span{
+	margin-left: 20px;
+	color: red;
+}
+.addPage{
+	display:none;
+	width: 300px;
+	height: 400px;
+	border: 1px solid #cca;
+	border-radius: 10px;
+	background-color: #cce;
+	top:20%;
+	left:35%;
+	position:absolute;
+}
+.addPage a{
+	margin-top: -36px;
+	margin-right:-20px;
+}
+.delPage{
+	display:none;
+	width: 500px;
+	height: 350px;
+	border: 1px solid #cca;
+	border-radius: 10px;
+	background-color: #cce;
+	top:120px;
+	left:35%;
+	position:absolute;
+}
+.delPage p{
+	width:460px;
+	height:20px;
+	margin:20px;
+}
+.addPage_menu{
+	width: 300px;
+	height: 60px;
+	border-bottom-color: green;
+	background-color: #ccf;
+	font-size:10px;
+}
+.delPage_menu{
+	width: 500px;
+	height: 60px;
+	margin-top: -20px;
+	border-bottom-color: green;
+	background-color: #ccf;
+	font-size:10px;
+	text-align: center;
+}
+.delPage_menu h2{
+	width:100%;
+	padding-top:20px;
+}
+.addPage_menu a{
+	float:right;
+}
+.delPage_menu a{
+	margin-top: -40px;
+	margin-right: -28px;
+	float:right;
+}
+.delPage_content div{
+	width:100%;
+	height:26px;
+	border-bottom:1px solid #CCC;
+}
+div.del_info{
+	width:100%;
+	height:130px;
+	overflow:auto;
+}
+.delPage_content .span_div:hover{
+	background-color: #F0F8FF;
+}
+.delPage_content .span_name{
+	padding:20px 180px 20px 60px;
+}
+.delPage_content .span_count{
+	float: right;
+	margin-right:100px;
+}
+.addPage input[type=text]{
+	margin: 0px 14px;
+	border: 2px solid #ccc;
+	border-radius:5px;
+	width:260px;
+	height:25px;
+}
+
+.addPage input[type=button]{
+	margin: 10px 45px;
+}
+.delPage .cancel_btn{
+	width:55px;
+	height:40px;
+	margin-top: -80px;
+	margin-left: 40px;
+	font-family: "宋体";
+	color: #bba;
+	font-size: 20px;
+	border:1px solid #eee;
+	border-radius: 5px;
+	background-color: #eea;
+	cursor: pointer;
+}
+.del_bottom{
+	margin-top:-10px;
+}
+.delPage .del_btn_check{
+	width:55px;
+	height:40px;
+	margin-top: -10px;
+	margin-left: 150px;
+	font-family: "宋体";
+	color: green;
+	font-size: 20px;
+	border:1px solid green;
+	border-radius: 5px;
+	background-color: #aaa;
+	cursor: pointer;
+}
+.checked_bg{
+	background-color: #CCFFFF;
+}
+
+/*页脚*/
+.wrapper .footer{
+	width:1000px;
+	height:80px;
+	position:relative;
+	top:18%;
+	left: 50%;
+	margin-left: -500px;
+	border-bottom: 2px solid blue;
+}
+.footer .show_line{
+	list-style: none;
+	display:none;
+	position:absolute;
+	margin-top: -180px;
+	margin-left: 80px;
+	border-radius:5px;
+	cursor:pointer;
+}
+.footer li{
+	width:80px;
+	height:30px;
+	padding-top: 10px;
+	border-bottom:1px solid blue;
+	text-align: center;
+	background-color: #e0e0e0;
+}
+.footer .show_list span{
+	width:120px;
+	height:30px;
+	float: left;
+	margin-top: 30px;
+}
+.footer .show_list .line{
+	width:80px;
+	height:30px;
+	margin-top: 20px;
+	padding-top: 10px;
+	border-radius:5px;
+	text-align: center;
+	cursor:pointer;
+	background-color: #e0e0e0;
+}
+.footer .line_bottom{
+	margin-left:-20px;
+	cursor:pointer;
+}
+.footer li:hover{
+	background-color: gray;
+}
+.footer .right_div{
+	width:120px;
+	height:20px;
+	margin-left:880px;
+	text-align: center;
+}
+.next{
+	width: 30px;
+	height:25px;
+	padding: 0px 10px;
+	margin-top:36px;
+	cursor:pointer;
+}
+.prev{
+	width: 30px;
+	height:25px;
+	padding: 0px 10px;
+	margin-left:-60px;
+	margin-top:36px;
+	cursor:pointer;
+}
+
